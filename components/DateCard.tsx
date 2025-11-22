@@ -66,7 +66,7 @@ export default function DateCard() {
                   {selectedIdea === index && (
                     <div className="mt-4 pt-4 border-t border-primary-700/50">
                       <p className="text-arcane-gold font-medium">
-                        ✓ Let's make this happen!
+                        ✓ Let&apos;s make this happen!
                       </p>
                     </div>
                   )}
@@ -79,7 +79,7 @@ export default function DateCard() {
             <div className="mt-8 text-center">
               <div className="inline-block card bg-primary-800/70 border-arcane-gold/50">
                 <p className="text-lg text-primary-200">
-                  Perfect choice! Can't wait to make more memories with you 💙
+                  Perfect choice! Can&apos;t wait to make more memories with you 💙
                 </p>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function DateCard() {
               <svg className="w-5 h-5 text-arcane-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              <span className="text-primary-300">After exams - we've got all the time in the world</span>
+              <span className="text-primary-300">After exams - we&apos;ve got all the time in the world</span>
             </div>
           </div>
         </div>
