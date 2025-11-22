@@ -4,6 +4,7 @@ A beautiful, interactive single-page birthday website built with Next.js, featur
 
 ## ✨ Features
 
+- **Smooth Background Transitions** - Seamless crossfade between section backgrounds as you scroll (no visible boundaries!)
 - **Hero Section** - Elegant landing with animated particles and gradient background
 - **Arcane Mood Section** - Parallax layers with rotating glyph effects inspired by Arcane's visual style
 - **Brooklyn 99 Quiz** - Interactive personality quiz with instant results
@@ -18,6 +19,7 @@ A beautiful, interactive single-page birthday website built with Next.js, featur
 
 - **Color Palette**: Predominantly blue with warm gold/peach accents
 - **Typography**: Elegant heading font with clean body text
+- **Background Transitions**: Smooth, seamless crossfading between section backgrounds as you scroll
 - **Animations**: Smooth scroll-based animations, hover effects, and micro-interactions
 - **Accessibility**: Semantic HTML, keyboard navigation, ARIA labels, reduced motion support
 - **Performance**: Optimized for Core Web Vitals (LCP, TBT, CLS)
@@ -95,7 +97,38 @@ public/
       └── photo6.jpg
 ```
 
-### 3. Add Music (Optional)
+### 3. Add Background Images (Optional)
+
+Each section can have its own background image that smoothly transitions as you scroll!
+
+1. Add images to `public/backgrounds/` directory
+2. Name them exactly as: `hero.jpg`, `arcane.jpg`, `brooklyn99.jpg`, `gallery.jpg`, `journey.jpg`, `shayari.jpg`, `playlist.jpg`, `date.jpg`, `footer.jpg`
+3. Recommended specs:
+   - Format: JPG or WebP
+   - Size: 1920x1080px (Full HD)
+   - File size: Under 500KB each
+   - Style: Blue tones, slightly blurred for dreamy effect
+
+**The backgrounds will seamlessly crossfade with no visible boundaries as you scroll!**
+
+**Background structure:**
+```
+public/
+  └── backgrounds/
+      ├── hero.jpg
+      ├── arcane.jpg
+      ├── brooklyn99.jpg
+      ├── gallery.jpg
+      ├── journey.jpg
+      ├── shayari.jpg
+      ├── playlist.jpg
+      ├── date.jpg
+      └── footer.jpg
+```
+
+If no images are added, beautiful blue gradients are used by default.
+
+### 4. Add Music (Optional)
 
 To enable actual playback in the Playlist section:
 
@@ -112,7 +145,7 @@ To enable actual playback in the Playlist section:
    ```
 3. Update `PlaylistSection.tsx` to use an `<audio>` element with the URLs
 
-### 4. Customize Colors
+### 5. Customize Colors
 
 Edit `tailwind.config.ts` to change the color scheme:
 
