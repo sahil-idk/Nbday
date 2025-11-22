@@ -97,21 +97,21 @@ public/
       └── photo6.jpg
 ```
 
-### 3. Add Background Images/GIFs (Optional)
+### 3. Add Background GIFs (Optional)
 
-Each section can have its own background image or animated GIF that smoothly transitions as you scroll!
+**ALL sections now support animated GIFs!** Each section has its own GIF that smoothly transitions as you scroll.
 
-1. Add images/GIFs to `public/backgrounds/` directory
+1. Add GIFs to `public/backgrounds/` directory
 2. Name them exactly as shown below
 3. Recommended specs:
-   - **Static Images**: JPG/PNG/WebP, 1920x1080px, under 500KB
-   - **Animated GIFs**: GIF format, 1920x1080px, 1-3MB max, smooth loops
-   - Style: Blue tones, slightly blurred for dreamy effect
+   - **Format**: GIF (animated)
+   - **Size**: 1920x1080px (Full HD)
+   - **File Size**: 1-3MB max (optimized for web)
+   - **Frame Rate**: 15-30 fps, seamless loops
+   - **Color Theme**: Blue tones (sections 1-7), Blue→Red transition (section 8), VI pink/red (section 9)
 
-**Special GIF Support:**
-- `hero.gif` - 🎬 Animated GIF behind "For Namrata — a little blue for your birthday"
-- `arcane.gif` - 🎬 Can be animated for mystical effect
-- `brooklyn99.gif` - 🎬 Can be animated for fun, playful vibe
+**🔴 Special VI Theme Footer:**
+The footer features **VI's signature reddish-pink colors** from Arcane (her favorite character!), creating a beautiful blue-to-red transition as you scroll to the bottom.
 
 **The backgrounds will seamlessly crossfade with no visible boundaries as you scroll!**
 
@@ -119,20 +119,25 @@ Each section can have its own background image or animated GIF that smoothly tra
 ```
 public/
   └── backgrounds/
-      ├── hero.gif       (🎬 animated - behind main text!)
-      ├── arcane.gif     (🎬 can be animated)
-      ├── brooklyn99.gif (🎬 can be animated)
-      ├── gallery.jpg    (static image)
-      ├── journey.jpg    (static image)
-      ├── shayari.jpg    (static image)
-      ├── playlist.jpg   (static image)
-      ├── date.jpg       (static image)
-      └── footer.jpg     (static image)
+      ├── hero.gif       🎬 Blue - behind "For Namrata..."
+      ├── arcane.gif     🎬 Blue - mystic magic
+      ├── brooklyn99.gif 🎬 Blue - fun & playful
+      ├── gallery.gif    🎬 Blue - memories theme
+      ├── journey.gif    🎬 Blue - travel/adventure
+      ├── shayari.gif    🎬 Blue - romantic & elegant
+      ├── playlist.gif   🎬 Blue - music visualizers
+      ├── date.gif       🎬 Blue→Red transition
+      └── footer.gif     🎬 VI Pink/Red - Arcane VI theme!
 ```
 
-**GIF Ideas for Hero:** Blue waves, floating particles, bokeh lights, twinkling stars, gentle animations
+**Color Journey:** Blue (calm) → Blue → Blue → ... → Blue-to-Red → VI Pink/Red (powerful!)
 
-If no images/GIFs are added, beautiful blue gradients are used by default.
+**GIF Search Ideas:**
+- Hero: "blue waves", "blue particles floating"
+- Footer: "arcane vi", "pink punch effect", "neon pink"
+- Date: "sunset gradient", "blue to pink transition"
+
+If no GIFs are added, beautiful blue gradients are used by default (footer uses reddish gradient).
 
 ### 4. Add Music (Optional)
 

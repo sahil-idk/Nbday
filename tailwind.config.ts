@@ -27,6 +27,12 @@ const config: Config = {
           peach: '#ffb89d',
           darkBlue: '#0a1628',
           lightBlue: '#4d7c9c',
+        },
+        vi: {
+          pink: '#be185d',
+          darkPink: '#8b285c',
+          lightPink: '#db2777',
+          red: '#be185d',
         }
       },
       fontFamily: {
@@ -36,6 +42,8 @@ const config: Config = {
       backgroundImage: {
         'arcane-gradient': 'linear-gradient(135deg, #0a1628 0%, #1e3a8a 50%, #2563eb 100%)',
         'hero-gradient': 'linear-gradient(180deg, #172554 0%, #1e40af 50%, #3b82f6 100%)',
+        'vi-gradient': 'linear-gradient(180deg, #8b285c 0%, #be185d 100%)',
+        'blue-to-vi': 'linear-gradient(135deg, #2563eb 0%, #8b285c 100%)',
       },
     },
   },

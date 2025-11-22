@@ -14,49 +14,55 @@ const backgrounds: BackgroundConfig[] = [
     id: 'hero',
     image: '/backgrounds/hero.gif',
     gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.6) 0%, rgba(30, 64, 175, 0.5) 100%)',
-    isAnimated: true, // GIF support
+    isAnimated: true,
   },
   {
     id: 'arcane',
     image: '/backgrounds/arcane.gif',
     gradient: 'linear-gradient(135deg, rgba(10, 22, 40, 0.75) 0%, rgba(30, 58, 138, 0.65) 100%)',
-    isAnimated: true, // Can be GIF or image
+    isAnimated: true,
   },
   {
     id: 'brooklyn99',
     image: '/backgrounds/brooklyn99.gif',
     gradient: 'linear-gradient(180deg, rgba(30, 58, 138, 0.7) 0%, rgba(59, 130, 246, 0.6) 100%)',
-    isAnimated: true, // Can be GIF or image
+    isAnimated: true,
   },
   {
     id: 'gallery',
-    image: '/backgrounds/gallery.jpg',
-    gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.85) 0%, rgba(30, 64, 175, 0.75) 100%)',
+    image: '/backgrounds/gallery.gif',
+    gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.7) 0%, rgba(30, 64, 175, 0.65) 100%)',
+    isAnimated: true,
   },
   {
     id: 'journey',
-    image: '/backgrounds/journey.jpg',
-    gradient: 'linear-gradient(135deg, rgba(30, 58, 138, 0.8) 0%, rgba(37, 99, 235, 0.7) 100%)',
+    image: '/backgrounds/journey.gif',
+    gradient: 'linear-gradient(135deg, rgba(30, 58, 138, 0.7) 0%, rgba(37, 99, 235, 0.6) 100%)',
+    isAnimated: true,
   },
   {
     id: 'shayari',
-    image: '/backgrounds/shayari.jpg',
-    gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.9) 0%, rgba(30, 58, 138, 0.8) 100%)',
+    image: '/backgrounds/shayari.gif',
+    gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.75) 0%, rgba(30, 58, 138, 0.7) 100%)',
+    isAnimated: true,
   },
   {
     id: 'playlist',
-    image: '/backgrounds/playlist.jpg',
-    gradient: 'linear-gradient(180deg, rgba(30, 58, 138, 0.8) 0%, rgba(59, 130, 246, 0.7) 100%)',
+    image: '/backgrounds/playlist.gif',
+    gradient: 'linear-gradient(180deg, rgba(30, 58, 138, 0.7) 0%, rgba(59, 130, 246, 0.65) 100%)',
+    isAnimated: true,
   },
   {
     id: 'date',
-    image: '/backgrounds/date.jpg',
-    gradient: 'linear-gradient(135deg, rgba(30, 58, 138, 0.85) 0%, rgba(23, 37, 84, 0.75) 100%)',
+    image: '/backgrounds/date.gif',
+    gradient: 'linear-gradient(135deg, rgba(30, 58, 138, 0.75) 0%, rgba(139, 40, 92, 0.7) 100%)', // Blue to reddish transition
+    isAnimated: true,
   },
   {
     id: 'footer',
-    image: '/backgrounds/footer.jpg',
-    gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.9) 0%, rgba(10, 22, 40, 0.95) 100%)',
+    image: '/backgrounds/footer.gif',
+    gradient: 'linear-gradient(180deg, rgba(139, 40, 92, 0.8) 0%, rgba(190, 24, 93, 0.85) 100%)', // VI's reddish/pink tones
+    isAnimated: true,
   },
 ];
 
