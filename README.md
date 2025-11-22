@@ -97,17 +97,21 @@ public/
       └── photo6.jpg
 ```
 
-### 3. Add Background Images (Optional)
+### 3. Add Background Images/GIFs (Optional)
 
-Each section can have its own background image that smoothly transitions as you scroll!
+Each section can have its own background image or animated GIF that smoothly transitions as you scroll!
 
-1. Add images to `public/backgrounds/` directory
-2. Name them exactly as: `hero.jpg`, `arcane.jpg`, `brooklyn99.jpg`, `gallery.jpg`, `journey.jpg`, `shayari.jpg`, `playlist.jpg`, `date.jpg`, `footer.jpg`
+1. Add images/GIFs to `public/backgrounds/` directory
+2. Name them exactly as shown below
 3. Recommended specs:
-   - Format: JPG or WebP
-   - Size: 1920x1080px (Full HD)
-   - File size: Under 500KB each
+   - **Static Images**: JPG/PNG/WebP, 1920x1080px, under 500KB
+   - **Animated GIFs**: GIF format, 1920x1080px, 1-3MB max, smooth loops
    - Style: Blue tones, slightly blurred for dreamy effect
+
+**Special GIF Support:**
+- `hero.gif` - 🎬 Animated GIF behind "For Namrata — a little blue for your birthday"
+- `arcane.gif` - 🎬 Can be animated for mystical effect
+- `brooklyn99.gif` - 🎬 Can be animated for fun, playful vibe
 
 **The backgrounds will seamlessly crossfade with no visible boundaries as you scroll!**
 
@@ -115,18 +119,20 @@ Each section can have its own background image that smoothly transitions as you 
 ```
 public/
   └── backgrounds/
-      ├── hero.jpg
-      ├── arcane.jpg
-      ├── brooklyn99.jpg
-      ├── gallery.jpg
-      ├── journey.jpg
-      ├── shayari.jpg
-      ├── playlist.jpg
-      ├── date.jpg
-      └── footer.jpg
+      ├── hero.gif       (🎬 animated - behind main text!)
+      ├── arcane.gif     (🎬 can be animated)
+      ├── brooklyn99.gif (🎬 can be animated)
+      ├── gallery.jpg    (static image)
+      ├── journey.jpg    (static image)
+      ├── shayari.jpg    (static image)
+      ├── playlist.jpg   (static image)
+      ├── date.jpg       (static image)
+      └── footer.jpg     (static image)
 ```
 
-If no images are added, beautiful blue gradients are used by default.
+**GIF Ideas for Hero:** Blue waves, floating particles, bokeh lights, twinkling stars, gentle animations
+
+If no images/GIFs are added, beautiful blue gradients are used by default.
 
 ### 4. Add Music (Optional)
 

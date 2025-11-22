@@ -6,23 +6,27 @@ interface BackgroundConfig {
   id: string;
   image: string;
   gradient?: string;
+  isAnimated?: boolean;
 }
 
 const backgrounds: BackgroundConfig[] = [
   {
     id: 'hero',
-    image: '/backgrounds/hero.jpg',
-    gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.8) 0%, rgba(30, 64, 175, 0.7) 100%)',
+    image: '/backgrounds/hero.gif',
+    gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.6) 0%, rgba(30, 64, 175, 0.5) 100%)',
+    isAnimated: true, // GIF support
   },
   {
     id: 'arcane',
-    image: '/backgrounds/arcane.jpg',
-    gradient: 'linear-gradient(135deg, rgba(10, 22, 40, 0.85) 0%, rgba(30, 58, 138, 0.75) 100%)',
+    image: '/backgrounds/arcane.gif',
+    gradient: 'linear-gradient(135deg, rgba(10, 22, 40, 0.75) 0%, rgba(30, 58, 138, 0.65) 100%)',
+    isAnimated: true, // Can be GIF or image
   },
   {
     id: 'brooklyn99',
-    image: '/backgrounds/brooklyn99.jpg',
-    gradient: 'linear-gradient(180deg, rgba(30, 58, 138, 0.8) 0%, rgba(59, 130, 246, 0.7) 100%)',
+    image: '/backgrounds/brooklyn99.gif',
+    gradient: 'linear-gradient(180deg, rgba(30, 58, 138, 0.7) 0%, rgba(59, 130, 246, 0.6) 100%)',
+    isAnimated: true, // Can be GIF or image
   },
   {
     id: 'gallery',
@@ -119,15 +123,16 @@ export default function BackgroundTransition() {
           opacity: 1 - transitionProgress * 0.5,
         }}
       >
-        {/* Background image placeholder */}
+        {/* Background image/GIF */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundColor: backgrounds[activeIndex].gradient ? undefined : '#1e3a8a',
+            backgroundImage: `url('${backgrounds[activeIndex].image}')`,
+            backgroundColor: '#1e3a8a', // Fallback color if image doesn't load
           }}
         />
 
-        {/* Gradient overlay */}
+        {/* Gradient overlay - lighter for GIFs to show animation */}
         <div
           className="absolute inset-0"
           style={{
@@ -143,15 +148,16 @@ export default function BackgroundTransition() {
           opacity: transitionProgress * 0.5,
         }}
       >
-        {/* Background image placeholder */}
+        {/* Background image/GIF */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundColor: backgrounds[nextIndex].gradient ? undefined : '#2563eb',
+            backgroundImage: `url('${backgrounds[nextIndex].image}')`,
+            backgroundColor: '#2563eb', // Fallback color if image doesn't load
           }}
         />
 
-        {/* Gradient overlay */}
+        {/* Gradient overlay - lighter for GIFs to show animation */}
         <div
           className="absolute inset-0"
           style={{
