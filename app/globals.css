@@ -8,10 +8,6 @@
     --font-heading: 'Georgia', 'Times New Roman', serif;
   }
 
-  * {
-    @apply border-border;
-  }
-
   html {
     scroll-behavior: smooth;
   }
