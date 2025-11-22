@@ -26,7 +26,7 @@ export default function MemoryGallery() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section bg-primary-950">
+    <section ref={sectionRef} className="section" data-section="gallery">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-heading mb-4">

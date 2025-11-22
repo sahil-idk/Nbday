@@ -19,7 +19,7 @@ export default function Brooklyn99Card() {
   };
 
   return (
-    <section className="section bg-primary-900">
+    <section className="section" data-section="brooklyn99">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto">
           <div className="card">

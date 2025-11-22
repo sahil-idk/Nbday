@@ -4,7 +4,7 @@ import content from '@/content.json';
 
 export default function Footer() {
   return (
-    <footer className="relative bg-primary-950 border-t border-primary-800/50">
+    <footer className="relative border-t border-primary-800/50" data-section="footer">
       <div className="container-custom py-16">
         {/* Main message */}
         <div className="text-center mb-12">

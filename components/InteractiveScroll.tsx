@@ -42,7 +42,7 @@ export default function InteractiveScroll() {
   const handleMouseUp = () => setIsDragging(false);
 
   return (
-    <section ref={sectionRef} className="section bg-primary-900 relative overflow-hidden">
+    <section ref={sectionRef} className="section relative overflow-hidden" data-section="journey">
       {/* Background waves */}
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 1000 1000" preserveAspectRatio="none">

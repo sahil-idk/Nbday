@@ -17,7 +17,7 @@ export default function PlaylistSection() {
   };
 
   return (
-    <section className="section bg-primary-900">
+    <section className="section" data-section="playlist">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">

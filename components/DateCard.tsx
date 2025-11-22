@@ -14,7 +14,7 @@ export default function DateCard() {
   };
 
   return (
-    <section className="section bg-gradient-to-b from-primary-900 to-primary-950 relative overflow-hidden">
+    <section className="section relative overflow-hidden" data-section="date">
       {/* Confetti effect */}
       {isConfetti && (
         <div className="absolute inset-0 pointer-events-none z-20">

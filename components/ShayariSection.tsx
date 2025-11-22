@@ -29,7 +29,8 @@ export default function ShayariSection() {
   return (
     <section
       ref={sectionRef}
-      className="section bg-gradient-to-b from-primary-950 to-primary-900 relative overflow-hidden"
+      className="section relative overflow-hidden"
+      data-section="shayari"
     >
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-5">

@@ -26,13 +26,14 @@ export default function ArcaneSection() {
   return (
     <section
       ref={sectionRef}
-      className="section relative bg-arcane-gradient overflow-hidden"
+      className="section relative overflow-hidden"
+      data-section="arcane"
     >
       {/* Parallax layers */}
       <div className="absolute inset-0">
         {/* Layer 1 - Far back */}
         <div
-          className="absolute inset-0 bg-primary-900/30"
+          className="absolute inset-0 opacity-20"
           style={{
             transform: `translateY(${scrollProgress * 50}px)`,
           }}

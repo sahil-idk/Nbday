@@ -18,25 +18,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="section relative overflow-hidden bg-hero-gradient">
-      {/* Animated background particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="particle absolute bg-primary-400/20"
-            style={{
-              width: `${Math.random() * 4 + 2}px`,
-              height: `${Math.random() * 4 + 2}px`,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: `float ${Math.random() * 10 + 10}s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 5}s`,
-            }}
-          />
-        ))}
-      </div>
-
+    <section className="section relative overflow-hidden" data-section="hero">
       {/* Content */}
       <div className="container-custom relative z-10 text-center">
         <div
