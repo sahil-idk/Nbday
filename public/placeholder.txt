@@ -1,0 +1,2 @@
+This is a placeholder for the public directory.
+Add your photos to the public/photos/ directory following the structure in content.json

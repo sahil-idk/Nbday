@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "name": "[Her Name]",
+    "headline": "For [Her Name] — a little blue for your birthday",
+    "scrollCta": "Scroll to open"
+  },
+  "arcaneSection": {
+    "title": "A World of Blue",
+    "subtitle": "Like the calm before an adventure"
+  },
+  "brooklyn99": {
+    "title": "Which Brooklyn 99 Character Are You?",
+    "question": "Pick your vibe:",
+    "options": [
+      {
+        "text": "Jake - Playful and fun",
+        "result": "You're the life of every drive and late-night conversation!"
+      },
+      {
+        "text": "Amy - Organized perfectionist",
+        "result": "You've got everything planned, even our spontaneous moments!"
+      },
+      {
+        "text": "Rosa - Cool and mysterious",
+        "result": "Quiet strength with a heart of gold. That's you."
+      },
+      {
+        "text": "Holt - Dignified and steady",
+        "result": "The calm, thoughtful presence in every moment we share."
+      }
+    ],
+    "funLine": "\"Cool, cool, cool, cool, cool\" - Jake Peralta"
+  },
+  "memoryGallery": {
+    "title": "Our Little Moments",
+    "subtitle": "From garba nights to quiet drives",
+    "photos": [
+      {
+        "src": "/photos/garba.jpg",
+        "caption": "That night at garba - you looked amazing!",
+        "alt": "Garba night memory"
+      },
+      {
+        "src": "/photos/photo2.jpg",
+        "caption": "Hoodie pocket hand-holding champion",
+        "alt": "Cozy moment together"
+      },
+      {
+        "src": "/photos/photo3.jpg",
+        "caption": "Late night drives and conversations",
+        "alt": "Car selfie"
+      },
+      {
+        "src": "/photos/photo4.jpg",
+        "caption": "Just another perfect moment",
+        "alt": "Happy memory"
+      },
+      {
+        "src": "/photos/photo5.jpg",
+        "caption": "Your smile makes everything better",
+        "alt": "Smiling together"
+      },
+      {
+        "src": "/photos/photo6.jpg",
+        "caption": "More memories to make",
+        "alt": "Adventure together"
+      }
+    ]
+  },
+  "interactiveScroll": {
+    "title": "Our Journey Together",
+    "subtitle": "Scroll or drag the boat across our map",
+    "locations": [
+      { "name": "First Meet", "position": 10 },
+      { "name": "Garba Night", "position": 30 },
+      { "name": "First Drive", "position": 50 },
+      { "name": "Hoodie Weather", "position": 70 },
+      { "name": "Today!", "position": 90 }
+    ]
+  },
+  "shayari": {
+    "title": "For You",
+    "lines": [
+      "[Your shayari line 1]",
+      "[Your shayari line 2]",
+      "[Your shayari line 3]"
+    ],
+    "signature": "— Sahil"
+  },
+  "playlist": {
+    "title": "Our Soundtrack",
+    "subtitle": "For late night drives and hoodie pockets",
+    "songs": [
+      { "name": "Song 1", "artist": "Artist 1", "url": "" },
+      { "name": "Song 2", "artist": "Artist 2", "url": "" },
+      { "name": "Song 3", "artist": "Artist 3", "url": "" },
+      { "name": "Song 4", "artist": "Artist 4", "url": "" },
+      { "name": "Song 5", "artist": "Artist 5", "url": "" },
+      { "name": "Song 6", "artist": "Artist 6", "url": "" }
+    ]
+  },
+  "dateCard": {
+    "title": "Plan Our Next Drive",
+    "subtitle": "After exams, let's make more memories",
+    "ideas": [
+      {
+        "title": "Sunset Drive",
+        "description": "Coffee, music, and golden hour views",
+        "icon": "🌅"
+      },
+      {
+        "title": "Late Night Cruise",
+        "description": "Empty roads and deep conversations",
+        "icon": "🌙"
+      },
+      {
+        "title": "Adventure Day",
+        "description": "New places, new stories",
+        "icon": "🗺️"
+      },
+      {
+        "title": "Cozy Café Hop",
+        "description": "Find the perfect spot together",
+        "icon": "☕"
+      }
+    ]
+  },
+  "footer": {
+    "message": "Happy Birthday! Here's to more blue moments, quiet drives, and holding hands in hoodie pockets. 💙",
+    "githubUrl": "https://github.com/sahil-idk/Nbday",
+    "builtBy": "Built with love by Sahil"
+  }
+}
