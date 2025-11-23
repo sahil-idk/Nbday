@@ -101,16 +101,40 @@
       { "text": "[Add more lyric lines with timing]", "startTime": 9 }
     ]
   },
-  "playlist": {
-    "title": "Our Soundtrack",
-    "subtitle": "For late night drives and hoodie pockets",
-    "songs": [
-      { "name": "Song 1", "artist": "Artist 1", "url": "" },
-      { "name": "Song 2", "artist": "Artist 2", "url": "" },
-      { "name": "Song 3", "artist": "Artist 3", "url": "" },
-      { "name": "Song 4", "artist": "Artist 4", "url": "" },
-      { "name": "Song 5", "artist": "Artist 5", "url": "" },
-      { "name": "Song 6", "artist": "Artist 6", "url": "" }
+  "carousel": {
+    "title": "Our Favorite Moments",
+    "subtitle": "A collection of scenes that remind me of us",
+    "images": [
+      {
+        "src": "/carousel/image1.png",
+        "caption": "Add your first favorite scene here",
+        "series": "Web Series Name",
+        "alt": "Favorite scene 1"
+      },
+      {
+        "src": "/carousel/image2.png",
+        "caption": "Add your second favorite scene here",
+        "series": "Web Series Name",
+        "alt": "Favorite scene 2"
+      },
+      {
+        "src": "/carousel/image3.png",
+        "caption": "Add your third favorite scene here",
+        "series": "Web Series Name",
+        "alt": "Favorite scene 3"
+      },
+      {
+        "src": "/carousel/image4.png",
+        "caption": "Add your fourth favorite scene here",
+        "series": "Web Series Name",
+        "alt": "Favorite scene 4"
+      },
+      {
+        "src": "/carousel/image5.png",
+        "caption": "Add your fifth favorite scene here",
+        "series": "Web Series Name",
+        "alt": "Favorite scene 5"
+      }
     ]
   },
   "dateCard": {
