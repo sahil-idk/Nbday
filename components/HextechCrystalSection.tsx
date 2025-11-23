@@ -9,16 +9,19 @@ export default function HextechCrystalSection() {
   const [isDragging, setIsDragging] = useState(false);
   const dragStartRef = useRef({ x: 0, y: 0 });
 
-  // Auto rotation
+  // Auto rotation - using requestAnimationFrame for better performance
   useEffect(() => {
     if (isDragging) return;
 
-    const interval = setInterval(() => {
+    let animationId: number;
+    const animate = () => {
       setRotateY(prev => prev + 0.5);
       setRotateX(prev => prev + 0.2);
-    }, 16); // ~60fps
+      animationId = requestAnimationFrame(animate);
+    };
 
-    return () => clearInterval(interval);
+    animationId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationId);
   }, [isDragging]);
 
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -44,20 +47,20 @@ export default function HextechCrystalSection() {
 
   return (
     <section
-      className="relative w-full h-screen bg-gradient-to-b from-slate-950 via-blue-950 to-slate-950 flex items-center justify-center overflow-hidden"
+      className="relative w-full h-screen bg-transparent flex items-center justify-center overflow-hidden"
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
     >
-      {/* Stars */}
-      <div className="absolute inset-0 pointer-events-none">
-        {Array.from({ length: 100 }).map((_, i) => (
+      {/* Stars - Reduced for performance */}
+      <div className="absolute inset-0 pointer-events-none opacity-40">
+        {Array.from({ length: 30 }).map((_, i) => (
           <div
             key={i}
-            className="absolute bg-white rounded-full animate-twinkle"
+            className="absolute bg-blue-200 rounded-full animate-twinkle"
             style={{
-              width: `${Math.random() * 3}px`,
-              height: `${Math.random() * 3}px`,
+              width: `${Math.random() * 2 + 1}px`,
+              height: `${Math.random() * 2 + 1}px`,
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 3}s`,
