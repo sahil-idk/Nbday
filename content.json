@@ -421,7 +421,7 @@
     "songUrl": "/music/come-back-2-me.mp3",
     "startTime": 135,
     "paragraphs": [
-      "Here’s to many more late-night listening (still one way), long conversations, and all the little moments that make everything feel lighter.",
+      "Here’s to many more late-night walks, long conversations, and all the little moments that make everything feel lighter.",
       "Thank you for being my calm, my laughter, and the blue recently. Happy birthday, bbg. 💙 & dont stop clocking dat tea 😌🤏🏽"
     ]
   },
@@ -485,44 +485,44 @@
     ]
   },
   "carousel": {
-    "title": "Our Favorite Moments",
-    "subtitle": "A collection of scenes that remind me of us",
+    "title": "In case I forgot to mention...",
+    "subtitle": "( this thing is AI generated, The author [chalant and 4'11] is not responsible for this )",
     "images": [
       {
         "src": "/carousel/image1.png",
-        "caption": "Add your first favorite scene here",
-        "series": "Web Series Name",
+        "caption": "",
+        "series": "",
         "alt": "Favorite scene 1"
       },
       {
         "src": "/carousel/image2.png",
-        "caption": "Add your second favorite scene here",
-        "series": "Web Series Name",
+        "caption": "",
+        "series": "",
         "alt": "Favorite scene 2"
       },
       {
         "src": "/carousel/image3.png",
-        "caption": "Add your third favorite scene here",
-        "series": "Web Series Name",
+        "caption": "",
+        "series": "",
         "alt": "Favorite scene 3"
       },
       {
         "src": "/carousel/image4.png",
-        "caption": "Add your fourth favorite scene here",
-        "series": "Web Series Name",
+        "caption": "",
+        "series": "",
         "alt": "Favorite scene 4"
       },
       {
         "src": "/carousel/image5.png",
-        "caption": "Add your fifth favorite scene here",
-        "series": "Web Series Name",
+        "caption": "",
+        "series": "",
         "alt": "Favorite scene 5"
       }
     ]
   },
   "dateCard": {
     "title": "Plan Our Next Drive",
-    "subtitle": "After exams, let's make more memories",
+    "subtitle": "let's make more memories",
     "ideas": [
       {
         "title": "Sunset Drive",
@@ -547,7 +547,7 @@
     ]
   },
   "footer": {
-    "message": "Happy Birthday! Here's to more blue moments, quiet drives, and holding hands in hoodie pockets. 💙",
+    "message": "Happy Birthday! Here's to more blue moments, quiet drives, and holding hands in hoodie pockets. 💙 ",
     "githubUrl": "https://github.com/sahil-idk/Nbday",
     "builtBy": "Built with love by Sahil"
   }
