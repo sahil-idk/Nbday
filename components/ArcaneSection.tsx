@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from 'react';
 import content from '@/content.json';
 import ScrollArrow from '@/components/ScrollArrow';
-import HextechCrystal from '@/components/HextechCrystal';
 
 export default function ArcaneSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -79,9 +78,8 @@ export default function ArcaneSection() {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 text-center">
         <div
-          className="text-center"
           style={{
             opacity: 1 - scrollProgress * 0.5,
             transform: `translateY(${scrollProgress * -50}px)`,
@@ -90,18 +88,22 @@ export default function ArcaneSection() {
           <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading mb-6 px-4">
             {content.arcaneSection.title}
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-primary-300 max-w-2xl mx-auto px-4 mb-12">
+          <p className="text-lg sm:text-xl md:text-2xl text-primary-300 max-w-2xl mx-auto px-4">
             {content.arcaneSection.subtitle}
           </p>
 
-          {/* Hextech Crystal */}
-          <div className="max-w-2xl mx-auto mb-8">
-            <HextechCrystal />
+          <div className="mt-12 flex justify-center gap-4">
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={i}
+                className="w-2 h-2 rounded-full bg-arcane-gold"
+                style={{
+                  animation: `pulse ${1 + i * 0.2}s ease-in-out infinite`,
+                  animationDelay: `${i * 0.2}s`,
+                }}
+              />
+            ))}
           </div>
-
-          <p className="text-sm text-primary-400 italic px-4">
-            ✨ Hover and click the crystal ✨
-          </p>
         </div>
       </div>
 
