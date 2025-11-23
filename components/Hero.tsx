@@ -26,7 +26,7 @@ export default function Hero() {
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <h1 className="text-6xl md:text-8xl font-heading mb-6 gradient-text">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading mb-6 gradient-text px-4">
             {content.hero.headline}
           </h1>
 

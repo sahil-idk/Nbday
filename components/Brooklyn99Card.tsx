@@ -25,10 +25,10 @@ export default function Brooklyn99Card() {
         <div className="max-w-3xl mx-auto">
           <div className="card">
             <div className="text-center mb-8">
-              <h2 className="text-4xl md:text-5xl font-heading mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading mb-4">
                 {content.brooklyn99.title}
               </h2>
-              <p className="text-primary-300 text-lg">
+              <p className="text-primary-300 text-base sm:text-lg">
                 {content.brooklyn99.question}
               </p>
             </div>
@@ -45,7 +45,7 @@ export default function Brooklyn99Card() {
                   }`}
                   disabled={showResult}
                 >
-                  <p className="font-medium text-lg">{option.text}</p>
+                  <p className="font-medium text-base sm:text-lg">{option.text}</p>
                 </button>
               ))}
             </div>
@@ -58,7 +58,7 @@ export default function Brooklyn99Card() {
             >
               {selectedOption !== null && (
                 <div className="bg-primary-800/50 rounded-xl p-6 border border-primary-600/50">
-                  <p className="text-lg text-center text-primary-200">
+                  <p className="text-base sm:text-lg text-center text-primary-200">
                     {content.brooklyn99.options[selectedOption].result}
                   </p>
                 </div>

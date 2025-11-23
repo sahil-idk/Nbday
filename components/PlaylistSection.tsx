@@ -22,10 +22,10 @@ export default function PlaylistSection() {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-6xl font-heading mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-heading mb-4">
               {content.playlist.title}
             </h2>
-            <p className="text-xl text-primary-300">
+            <p className="text-base sm:text-lg md:text-xl text-primary-300">
               {content.playlist.subtitle}
             </p>
           </div>

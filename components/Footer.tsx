@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container-custom py-16">
         {/* Main message */}
         <div className="text-center mb-12">
-          <p className="text-2xl md:text-3xl font-heading text-primary-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-heading text-primary-200 max-w-3xl mx-auto leading-relaxed px-4">
             {content.footer.message}
           </p>
         </div>

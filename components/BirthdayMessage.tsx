@@ -31,7 +31,7 @@ export default function BirthdayMessage() {
         <div className="max-w-2xl">
           {/* Left-aligned content */}
           <div className="text-left">
-            <h2 className="text-5xl md:text-7xl font-heading mb-8 text-white">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading mb-8 text-white">
               {content.birthdayMessage.heading}
             </h2>
 
@@ -99,7 +99,7 @@ export default function BirthdayMessage() {
               {content.birthdayMessage.paragraphs.map((paragraph, index) => (
                 <p
                   key={index}
-                  className="text-xl md:text-2xl text-primary-100 leading-relaxed"
+                  className="text-base sm:text-lg md:text-xl lg:text-2xl text-primary-100 leading-relaxed"
                 >
                   {paragraph}
                 </p>

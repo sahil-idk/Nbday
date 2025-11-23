@@ -35,12 +35,6 @@ const backgrounds: BackgroundConfig[] = [
     isAnimated: true,
   },
   {
-    id: 'shayari',
-    image: '/backgrounds/shayari.gif',
-    gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.4) 0%, rgba(30, 58, 138, 0.35) 100%)', // Lighter
-    isAnimated: true,
-  },
-  {
     id: 'playlist',
     image: '/backgrounds/playlist.gif',
     gradient: 'linear-gradient(180deg, rgba(30, 58, 138, 0.4) 0%, rgba(59, 130, 246, 0.35) 100%)', // Lighter
@@ -120,9 +114,12 @@ export default function BackgroundTransition() {
         >
           {/* Background GIF */}
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0"
             style={{
               backgroundImage: `url('${bg.image}')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
               backgroundColor: '#1e3a8a',
             }}
           />

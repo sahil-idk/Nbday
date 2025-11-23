@@ -85,10 +85,10 @@ export default function ArcaneSection() {
             transform: `translateY(${scrollProgress * -50}px)`,
           }}
         >
-          <h2 className="text-5xl md:text-7xl font-heading mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading mb-6 px-4">
             {content.arcaneSection.title}
           </h2>
-          <p className="text-xl md:text-2xl text-primary-300 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-primary-300 max-w-2xl mx-auto px-4">
             {content.arcaneSection.subtitle}
           </p>
 

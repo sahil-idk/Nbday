@@ -38,10 +38,10 @@ export default function DateCard() {
       <div className="container-custom relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-6xl font-heading mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-heading mb-4">
               {content.dateCard.title}
             </h2>
-            <p className="text-xl text-primary-300">
+            <p className="text-base sm:text-lg md:text-xl text-primary-300">
               {content.dateCard.subtitle}
             </p>
           </div>
@@ -58,11 +58,11 @@ export default function DateCard() {
                 onClick={() => handleSelectIdea(index)}
               >
                 <div className="text-center">
-                  <div className="text-6xl mb-4">{idea.icon}</div>
-                  <h3 className="text-2xl font-heading mb-3 text-primary-100">
+                  <div className="text-5xl sm:text-6xl mb-4">{idea.icon}</div>
+                  <h3 className="text-xl sm:text-2xl font-heading mb-3 text-primary-100">
                     {idea.title}
                   </h3>
-                  <p className="text-primary-300">{idea.description}</p>
+                  <p className="text-sm sm:text-base text-primary-300">{idea.description}</p>
 
                   {selectedIdea === index && (
                     <div className="mt-4 pt-4 border-t border-primary-700/50">
@@ -79,7 +79,7 @@ export default function DateCard() {
           {selectedIdea !== null && (
             <div className="mt-8 text-center">
               <div className="inline-block card bg-primary-800/70 border-arcane-gold/50">
-                <p className="text-lg text-primary-200">
+                <p className="text-base sm:text-lg text-primary-200">
                   Perfect choice! Can&apos;t wait to make more memories with you 💙
                 </p>
               </div>
@@ -92,7 +92,7 @@ export default function DateCard() {
               <svg className="w-5 h-5 text-arcane-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              <span className="text-primary-300">After exams - we&apos;ve got all the time in the world</span>
+              <span className="text-sm sm:text-base text-primary-300">After exams - we&apos;ve got all the time in the world</span>
             </div>
           </div>
         </div>
