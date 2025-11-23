@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from 'react';
 import content from '@/content.json';
 import ScrollArrow from '@/components/ScrollArrow';
-import SimpleCrystal from '@/components/SimpleCrystal';
 
 export default function ArcaneSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -89,18 +88,11 @@ export default function ArcaneSection() {
           <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading mb-6 px-4">
             {content.arcaneSection.title}
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-primary-300 max-w-2xl mx-auto px-4 mb-8">
+          <p className="text-lg sm:text-xl md:text-2xl text-primary-300 max-w-2xl mx-auto px-4">
             {content.arcaneSection.subtitle}
           </p>
 
-          {/* Simple Crystal */}
-          <SimpleCrystal />
-
-          <p className="text-sm text-primary-400 italic mt-4 mb-8">
-            ✨ Click the crystal ✨
-          </p>
-
-          <div className="mt-8 flex justify-center gap-4">
+          <div className="mt-12 flex justify-center gap-4">
             {[...Array(5)].map((_, i) => (
               <div
                 key={i}
