@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import content from '@/content.json';
+import ScrollArrow from '@/components/ScrollArrow';
 
 export default function Brooklyn99Card() {
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
@@ -73,6 +74,7 @@ export default function Brooklyn99Card() {
           </div>
         </div>
       </div>
+      <ScrollArrow />
     </section>
   );
 }

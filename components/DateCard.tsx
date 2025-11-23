@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import content from '@/content.json';
+import ScrollArrow from '@/components/ScrollArrow';
 
 export default function DateCard() {
   const [selectedIdea, setSelectedIdea] = useState<number | null>(null);
@@ -105,6 +106,7 @@ export default function DateCard() {
           }
         }
       `}</style>
+      <ScrollArrow />
     </section>
   );
 }

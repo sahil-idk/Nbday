@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react';
 import content from '@/content.json';
+import ScrollArrow from '@/components/ScrollArrow';
 
 export default function BirthdayMessage() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -112,6 +113,7 @@ export default function BirthdayMessage() {
           }
         }
       `}</style>
+      <ScrollArrow />
     </section>
   );
 }

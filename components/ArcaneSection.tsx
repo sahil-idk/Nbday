@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import content from '@/content.json';
+import ScrollArrow from '@/components/ScrollArrow';
 
 export default function ArcaneSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -105,6 +106,8 @@ export default function ArcaneSection() {
           </div>
         </div>
       </div>
+
+      <ScrollArrow />
 
       <style jsx>{`
         @keyframes pulse {

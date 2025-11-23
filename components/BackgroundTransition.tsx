@@ -62,8 +62,6 @@ const backgrounds: BackgroundConfig[] = [
 
 export default function BackgroundTransition() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [nextIndex, setNextIndex] = useState(0);
-  const [transitionProgress, setTransitionProgress] = useState(0);
   const sectionsRef = useRef<HTMLElement[]>([]);
 
   useEffect(() => {
@@ -76,7 +74,6 @@ export default function BackgroundTransition() {
 
       // Find which section is currently in view
       let currentSection = 0;
-      let progress = 0;
 
       for (let i = 0; i < sections.length; i++) {
         const section = sections[i] as HTMLElement;
@@ -86,9 +83,6 @@ export default function BackgroundTransition() {
 
         if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
           currentSection = i;
-
-          // Calculate progress through this section (0 to 1)
-          progress = (scrollPosition - sectionTop) / rect.height;
           break;
         } else if (scrollPosition < sectionTop) {
           currentSection = Math.max(0, i - 1);
@@ -98,16 +92,9 @@ export default function BackgroundTransition() {
         }
       }
 
-      // Ensure indices are within bounds
+      // Ensure index is within bounds
       const safeIndex = Math.min(Math.max(currentSection, 0), backgrounds.length - 1);
       setActiveIndex(safeIndex);
-
-      // Set next index for smooth transition
-      const next = Math.min(safeIndex + 1, backgrounds.length - 1);
-      setNextIndex(next);
-
-      // Smooth transition progress
-      setTransitionProgress(progress);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -116,61 +103,39 @@ export default function BackgroundTransition() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Safety check for indices
+  // Safety check for index
   const safeActiveIndex = Math.min(Math.max(activeIndex, 0), backgrounds.length - 1);
-  const safeNextIndex = Math.min(Math.max(nextIndex, 0), backgrounds.length - 1);
 
   return (
     <div className="fixed inset-0 -z-10">
-      {/* Current background */}
-      <div
-        className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
-        style={{
-          opacity: 1 - transitionProgress * 0.5,
-        }}
-      >
-        {/* Background image/GIF */}
+      {/* Render all backgrounds */}
+      {backgrounds.map((bg, index) => (
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          key={bg.id}
+          className="absolute inset-0 transition-opacity duration-700 ease-in-out"
           style={{
-            backgroundImage: `url('${backgrounds[safeActiveIndex]?.image || backgrounds[0].image}')`,
-            backgroundColor: '#1e3a8a', // Fallback color if image doesn't load
+            opacity: index === safeActiveIndex ? 1 : 0,
+            pointerEvents: 'none',
           }}
-        />
+        >
+          {/* Background GIF */}
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('${bg.image}')`,
+              backgroundColor: '#1e3a8a',
+            }}
+          />
 
-        {/* Gradient overlay - lighter for GIFs to show animation */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: backgrounds[safeActiveIndex]?.gradient || backgrounds[0].gradient,
-          }}
-        />
-      </div>
-
-      {/* Next background (for smooth transition) */}
-      <div
-        className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
-        style={{
-          opacity: transitionProgress * 0.5,
-        }}
-      >
-        {/* Background image/GIF */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('${backgrounds[safeNextIndex]?.image || backgrounds[0].image}')`,
-            backgroundColor: '#2563eb', // Fallback color if image doesn't load
-          }}
-        />
-
-        {/* Gradient overlay - lighter for GIFs to show animation */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: backgrounds[safeNextIndex]?.gradient || backgrounds[0].gradient,
-          }}
-        />
-      </div>
+          {/* Gradient overlay */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background: bg.gradient,
+            }}
+          />
+        </div>
+      ))}
 
       {/* Animated particles overlay */}
       <div className="absolute inset-0 opacity-30">

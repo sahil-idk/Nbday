@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import content from '@/content.json';
+import ScrollArrow from '@/components/ScrollArrow';
 
 export default function ShayariSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -106,6 +107,7 @@ export default function ShayariSection() {
           }
         }
       `}</style>
+      <ScrollArrow />
     </section>
   );
 }

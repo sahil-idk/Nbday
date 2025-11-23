@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import content from '@/content.json';
+import ScrollArrow from '@/components/ScrollArrow';
 
 export default function PlaylistSection() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -123,6 +124,7 @@ export default function PlaylistSection() {
           }
         }
       `}</style>
+      <ScrollArrow />
     </section>
   );
 }
