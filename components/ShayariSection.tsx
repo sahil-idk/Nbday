@@ -43,13 +43,13 @@ export default function ShayariSection() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-heading mb-4 text-arcane-gold">
-              {content.shayari.title}
+              {/* {content.shayari.title} */}
             </h2>
           </div>
 
           <div className="card bg-primary-900/70 backdrop-blur-md border-arcane-gold/30">
             <div className="space-y-6">
-              {content.shayari.lines.map((line, index) => (
+              {/* {content.shayari.lines.map((line, index) => (
                 <p
                   key={index}
                   className={`text-2xl md:text-3xl font-heading text-center text-primary-100 transition-all duration-1000 ${
@@ -64,7 +64,7 @@ export default function ShayariSection() {
                 >
                   {line}
                 </p>
-              ))}
+              ))} */}
 
               {/* Signature */}
               <div
@@ -75,7 +75,7 @@ export default function ShayariSection() {
                 }`}
               >
                 <p className="text-xl md:text-2xl font-heading text-arcane-gold italic">
-                  {content.shayari.signature}
+                  {/* {content.shayari.signature} */}
                 </p>
               </div>
             </div>
