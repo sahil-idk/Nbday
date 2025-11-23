@@ -1,6 +1,6 @@
 import BackgroundTransition from "@/components/BackgroundTransition";
 import Hero from "@/components/Hero";
-import ArcaneSection from "@/components/ArcaneSection";
+import HextechCrystalSection from "@/components/HextechCrystalSection";
 import AmySantiagoQuiz from "@/components/AmySantiagoQuiz";
 import BirthdayMessage from "@/components/BirthdayMessage";
 import MusicSection from "@/components/MusicSection";
@@ -13,7 +13,7 @@ export default function Home() {
     <main className="relative overflow-x-hidden">
       <BackgroundTransition />
       <Hero />
-      <ArcaneSection />
+      <HextechCrystalSection />
       <AmySantiagoQuiz />
       <BirthdayMessage />
       <MusicSection />
