@@ -31,7 +31,7 @@ export default function BirthdayMessage() {
         <div className="max-w-2xl">
           {/* Left-aligned content */}
           <div className="text-left">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading mb-8 text-white">
+            <h2 className="text-3xl w- sm:text-4xl md:text-6xl lg:text-7xl font-heading mb-8 text-white">
               {content.birthdayMessage.heading}
             </h2>
 
