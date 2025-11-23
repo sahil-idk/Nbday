@@ -33,9 +33,9 @@
   },
   "birthdayMessage": {
     "heading": "Happy birthday bbg ....",
-    "songTitle": "Your Special Song",
-    "songArtist": "Artist Name",
-    "songUrl": "/music/birthday-song.mp3",
+    "songTitle": "forever rain",
+    "songArtist": "RM",
+    "songUrl": "/music/forever-rain.mp3",
     "paragraphs": [
       "Here's to another year of late-night drives, endless conversations, and all those little moments that make everything better.",
       "Thank you for being the calm in every storm, the laugh in every silence, and the blue in every day. Happy birthday, bbg! 💙"
@@ -88,14 +88,17 @@
       { "name": "Today!", "position": 90 }
     ]
   },
-  "shayari": {
-    "title": "For You",
-    "lines": [
-      "[Your shayari line 1]",
-      "[Your shayari line 2]",
-      "[Your shayari line 3]"
-    ],
-    "signature": "— Sahil"
+  "lyricsSection": {
+    "title": "How I See You",
+    "songTitle": "Ma Meilleure Ennemie",
+    "songArtist": "Stromae & Pomme (Arcane)",
+    "songUrl": "/music/ma-meilleure-ennemie.mp3",
+    "lyrics": [
+      { "text": "[Add first lyric line here]", "startTime": 0 },
+      { "text": "[Add second lyric line here]", "startTime": 3 },
+      { "text": "[Add third lyric line here]", "startTime": 6 },
+      { "text": "[Add more lyric lines with timing]", "startTime": 9 }
+    ]
   },
   "playlist": {
     "title": "Our Soundtrack",
