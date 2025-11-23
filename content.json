@@ -8,28 +8,411 @@
     "title": "A World of Blue",
     "subtitle": "Like the calm before an adventure"
   },
-  "brooklyn99": {
-    "title": "Which Brooklyn 99 Character Are You?",
-    "question": "Pick your vibe:",
-    "options": [
+  "amyQuiz": {
+    "title": "What Kind of Santiago Are You?",
+    "subtitle": "Take this Amy Santiago–style personality quiz to discover your organizational superpowers!",
+    "amyIntro": "Alright birthday detective, let's see what kind of Santiago you really are. Binders ready? Let's go!",
+    "finalMessage": "The whole Nine-Nine is celebrating YOU today! Even Captain Holt cracked a smile. 💙",
+    "questions": [
       {
-        "text": "Jake - Playful and fun",
-        "result": "You're the life of every drive and late-night conversation!"
+        "question": "How do you organize your day?",
+        "characterComment": {
+          "character": "Amy",
+          "text": "This is the most important question. Your planner says everything about you!"
+        },
+        "answers": [
+          {
+            "emoji": "📅",
+            "text": "Energized Early Bird",
+            "subtext": "Every second scheduled in color-coded binders",
+            "type": "ultraOrganized",
+            "points": 3
+          },
+          {
+            "emoji": "📊",
+            "text": "Spreadsheet Strategist",
+            "subtext": "I have a spreadsheet for my spreadsheets",
+            "type": "spreadsheetQueen",
+            "points": 3
+          },
+          {
+            "emoji": "⚡",
+            "text": "Flexible Planner",
+            "subtext": "I have a general plan but can adapt",
+            "type": "reformationCaptain",
+            "points": 3
+          },
+          {
+            "emoji": "🌙",
+            "text": "Midnight Crasher",
+            "subtext": "Last-minute everything, somehow it works",
+            "type": "laidBackSantiago",
+            "points": 3
+          }
+        ]
       },
       {
-        "text": "Amy - Organized perfectionist",
-        "result": "You've got everything planned, even our spontaneous moments!"
+        "question": "Your friend asks for birthday party help. You...",
+        "characterComment": {
+          "character": "Gina",
+          "text": "Oh honey, we all know you're gonna make a binder for this"
+        },
+        "answers": [
+          {
+            "emoji": "📋",
+            "text": "Create a 47-slide presentation",
+            "subtext": "Complete with vendor comparisons and budget breakdowns",
+            "type": "ultraOrganized",
+            "points": 3
+          },
+          {
+            "emoji": "📈",
+            "text": "Build a party planning database",
+            "subtext": "Guest lists, RSVP tracking, and timeline charts",
+            "type": "spreadsheetQueen",
+            "points": 3
+          },
+          {
+            "emoji": "💡",
+            "text": "Suggest cool ideas and help coordinate",
+            "subtext": "Organized but keeping it fun and flexible",
+            "type": "reformationCaptain",
+            "points": 3
+          },
+          {
+            "emoji": "🎉",
+            "text": "Wing it on the day",
+            "subtext": "Spontaneity is the spice of parties!",
+            "type": "laidBackSantiago",
+            "points": 3
+          }
+        ]
       },
       {
-        "text": "Rosa - Cool and mysterious",
-        "result": "Quiet strength with a heart of gold. That's you."
+        "question": "How is your closet organized?",
+        "characterComment": {
+          "character": "Jake",
+          "text": "Amy's closet is literally sorted by season, color, AND occasion. It's beautiful and terrifying."
+        },
+        "answers": [
+          {
+            "emoji": "🎨",
+            "text": "Color-coded by season and occasion",
+            "subtext": "All hangers facing the same direction, obviously",
+            "type": "ultraOrganized",
+            "points": 3
+          },
+          {
+            "emoji": "📊",
+            "text": "Categorized with wear frequency data",
+            "subtext": "I track what I wear and optimize accordingly",
+            "type": "spreadsheetQueen",
+            "points": 3
+          },
+          {
+            "emoji": "👔",
+            "text": "Organized but practical",
+            "subtext": "Grouped by type, easy to find things",
+            "type": "reformationCaptain",
+            "points": 3
+          },
+          {
+            "emoji": "🤷",
+            "text": "Organized chaos",
+            "subtext": "I know where everything is... mostly",
+            "type": "laidBackSantiago",
+            "points": 3
+          }
+        ]
       },
       {
-        "text": "Holt - Dignified and steady",
-        "result": "The calm, thoughtful presence in every moment we share."
+        "question": "Someone changes plans last minute. You...",
+        "characterComment": {
+          "character": "Holt",
+          "text": "Adaptability is crucial for a detective. Let's see how you handle unexpected variables."
+        },
+        "answers": [
+          {
+            "emoji": "😰",
+            "text": "Panic briefly, then make new binder",
+            "subtext": "Must reorganize everything immediately!",
+            "type": "ultraOrganized",
+            "points": 3
+          },
+          {
+            "emoji": "🔄",
+            "text": "Update all my tracking systems",
+            "subtext": "Recalculate timeline and adjust spreadsheets",
+            "type": "spreadsheetQueen",
+            "points": 3
+          },
+          {
+            "emoji": "✅",
+            "text": "Roll with it confidently",
+            "subtext": "I can adapt while staying organized",
+            "type": "reformationCaptain",
+            "points": 3
+          },
+          {
+            "emoji": "😎",
+            "text": "No problem at all",
+            "subtext": "Change is my middle name",
+            "type": "laidBackSantiago",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": "Your ideal study/work session includes...",
+        "characterComment": {
+          "character": "Amy",
+          "text": "Please say binders and highlighters. Please say binders and highlighters."
+        },
+        "answers": [
+          {
+            "emoji": "📚",
+            "text": "Labeled binders and color-coded notes",
+            "subtext": "12 different highlighter colors minimum",
+            "type": "ultraOrganized",
+            "points": 3
+          },
+          {
+            "emoji": "💻",
+            "text": "Digital tools and productivity apps",
+            "subtext": "Everything synced and tracked",
+            "type": "spreadsheetQueen",
+            "points": 3
+          },
+          {
+            "emoji": "☕",
+            "text": "Organized notes and good coffee",
+            "subtext": "Focused but not obsessive",
+            "type": "reformationCaptain",
+            "points": 3
+          },
+          {
+            "emoji": "🎵",
+            "text": "Music and vibe-based productivity",
+            "subtext": "I work best when I'm in the flow",
+            "type": "laidBackSantiago",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": "You're planning a trip. First thing you do?",
+        "characterComment": {
+          "character": "Jake",
+          "text": "Amy made an itinerary for our honeymoon with bathroom break timestamps. It was... thorough."
+        },
+        "answers": [
+          {
+            "emoji": "🗺️",
+            "text": "Create detailed minute-by-minute itinerary",
+            "subtext": "Including backup plans for every scenario",
+            "type": "ultraOrganized",
+            "points": 3
+          },
+          {
+            "emoji": "📊",
+            "text": "Build comparison spreadsheet of options",
+            "subtext": "Flights, hotels, activities all scored and ranked",
+            "type": "spreadsheetQueen",
+            "points": 3
+          },
+          {
+            "emoji": "✈️",
+            "text": "Research and make a flexible plan",
+            "subtext": "Key things booked, rest we'll figure out",
+            "type": "reformationCaptain",
+            "points": 3
+          },
+          {
+            "emoji": "🌍",
+            "text": "Book flight and go with the flow",
+            "subtext": "Adventure is about spontaneity!",
+            "type": "laidBackSantiago",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": "How do you celebrate achievements?",
+        "characterComment": {
+          "character": "Rosa",
+          "text": "Amy throws herself a surprise party. She organizes it herself."
+        },
+        "answers": [
+          {
+            "emoji": "🏆",
+            "text": "Update achievement tracker",
+            "subtext": "Add to my organized list of accomplishments",
+            "type": "ultraOrganized",
+            "points": 3
+          },
+          {
+            "emoji": "📈",
+            "text": "Analyze what led to success",
+            "subtext": "Create a success metrics dashboard",
+            "type": "spreadsheetQueen",
+            "points": 3
+          },
+          {
+            "emoji": "🎉",
+            "text": "Celebrate with friends",
+            "subtext": "Share the win and plan something fun",
+            "type": "reformationCaptain",
+            "points": 3
+          },
+          {
+            "emoji": "😌",
+            "text": "Quietly enjoy the moment",
+            "subtext": "No big deal, on to the next thing",
+            "type": "laidBackSantiago",
+            "points": 3
+          }
+        ]
+      },
+      {
+        "question": "Final question: What's your life motto?",
+        "characterComment": {
+          "character": "Gina",
+          "text": "Make it count, birthday girl!"
+        },
+        "answers": [
+          {
+            "emoji": "📋",
+            "text": "If it's not in the binder, it didn't happen",
+            "subtext": "Documentation is everything",
+            "type": "ultraOrganized",
+            "points": 3
+          },
+          {
+            "emoji": "📊",
+            "text": "Data-driven decisions lead to success",
+            "subtext": "Numbers don't lie",
+            "type": "spreadsheetQueen",
+            "points": 3
+          },
+          {
+            "emoji": "⚖️",
+            "text": "Balance planning with flexibility",
+            "subtext": "Best of both worlds",
+            "type": "reformationCaptain",
+            "points": 3
+          },
+          {
+            "emoji": "🌟",
+            "text": "Life's too short for too many plans",
+            "subtext": "Go with the vibe",
+            "type": "laidBackSantiago",
+            "points": 3
+          }
+        ]
       }
     ],
-    "funLine": "\"Cool, cool, cool, cool, cool\" - Jake Peralta"
+    "personalities": [
+      {
+        "type": "ultraOrganized",
+        "emoji": "📋",
+        "title": "The Ultra-Organized Santiago",
+        "description": "You're Amy Santiago at her finest! You have a binder for everything, your planner is color-coded, and you've already planned next month's birthday. Your organizational skills are legendary, and you bring structure to every situation. Captain Holt would be proud!",
+        "birthdayMessage": "Case closed, Detective! You've got Amy-level organization. And today, every calendar is cleared to celebrate YOU. 🎂",
+        "reactions": [
+          {
+            "character": "Amy",
+            "text": "OH MY GOD you're basically me! This is the best birthday present ever!"
+          },
+          {
+            "character": "Jake",
+            "text": "I knew it! You're definitely bringing a binder to your own party."
+          },
+          {
+            "character": "Holt",
+            "text": "Outstanding organizational capacity. Your efficiency rating is exceptional."
+          },
+          {
+            "character": "Gina",
+            "text": "You're like Amy but it's your birthday so we'll allow the extra planning."
+          }
+        ]
+      },
+      {
+        "type": "spreadsheetQueen",
+        "emoji": "📊",
+        "title": "The Spreadsheet Queen",
+        "description": "You don't just organize—you optimize! You've got spreadsheets for everything, you track data like a pro, and your decision-making is 100% metrics-driven. You're Amy Santiago with a double major in statistics. Efficiency is your superpower!",
+        "birthdayMessage": "Officially an Amy Reformation Captain! Your data analysis skills are off the charts. Happy Birthday to the queen of spreadsheets! 📈",
+        "reactions": [
+          {
+            "character": "Amy",
+            "text": "You have spreadsheets for your spreadsheets? We need to be best friends!"
+          },
+          {
+            "character": "Jake",
+            "text": "I'm scared and impressed at the same time."
+          },
+          {
+            "character": "Holt",
+            "text": "Your analytical approach is commendable. Carry on."
+          },
+          {
+            "character": "Gina",
+            "text": "All these numbers are making my brain hurt but you do you, Excel Queen."
+          }
+        ]
+      },
+      {
+        "type": "reformationCaptain",
+        "emoji": "⚖️",
+        "title": "The Balanced Santiago",
+        "description": "You've mastered the art of organized flexibility! You plan ahead but can adapt when needed. You're Amy Santiago post-character development—still organized but way more chill about it. You bring structure without stress, and that's a superpower!",
+        "birthdayMessage": "Perfect balance detected! You're organized when it matters and flexible when life happens. That's true Santiago wisdom. Happy Birthday! 🎯",
+        "reactions": [
+          {
+            "character": "Amy",
+            "text": "You're like future me after Jake taught me to relax a little. Love it!"
+          },
+          {
+            "character": "Jake",
+            "text": "See Amy? This is the perfect amount of planning!"
+          },
+          {
+            "character": "Holt",
+            "text": "Adaptability paired with structure. Well done."
+          },
+          {
+            "character": "Gina",
+            "text": "Finally someone who gets that life needs SOME planning. Respect."
+          }
+        ]
+      },
+      {
+        "type": "laidBackSantiago",
+        "emoji": "🌊",
+        "title": "The Laid-Back Santiago",
+        "description": "You're Santiago in spirit but Peralta in practice! You've got the heart of Amy but the spontaneity of Jake. You wing it, you adapt, and somehow everything works out. You're proof that not everything needs a binder—but Amy might try to convince you otherwise!",
+        "birthdayMessage": "You're like Jake trying to be Amy, and honestly? It's working! Your spontaneous energy is perfect for celebrating. Happy Birthday! 🎉",
+        "reactions": [
+          {
+            "character": "Amy",
+            "text": "Okay but... have you considered making just ONE binder? For fun?"
+          },
+          {
+            "character": "Jake",
+            "text": "YEAH! That's what I'm talking about! Go with the flow!"
+          },
+          {
+            "character": "Holt",
+            "text": "Unconventional, but results speak for themselves."
+          },
+          {
+            "character": "Gina",
+            "text": "This is the vibe. Chaos with confidence. I approve."
+          }
+        ]
+      }
+    ]
   },
   "birthdayMessage": {
     "heading": "Happy birthday bbg ...",

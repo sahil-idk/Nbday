@@ -1,7 +1,7 @@
 import BackgroundTransition from "@/components/BackgroundTransition";
 import Hero from "@/components/Hero";
 import ArcaneSection from "@/components/ArcaneSection";
-import Brooklyn99Card from "@/components/Brooklyn99Card";
+import AmySantiagoQuiz from "@/components/AmySantiagoQuiz";
 import BirthdayMessage from "@/components/BirthdayMessage";
 import MusicSection from "@/components/MusicSection";
 import ImageCarousel from "@/components/ImageCarousel";
@@ -14,7 +14,7 @@ export default function Home() {
       <BackgroundTransition />
       <Hero />
       <ArcaneSection />
-      <Brooklyn99Card />
+      <AmySantiagoQuiz />
       <BirthdayMessage />
       <MusicSection />
       <ImageCarousel />
