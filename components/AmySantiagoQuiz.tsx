@@ -114,7 +114,7 @@ export default function AmySantiagoQuiz() {
                 {/* Character Intro */}
                 <div className="bg-primary-800/50 rounded-xl p-6 mb-8 border-l-4 border-arcane-gold">
                   <p className="text-lg italic text-primary-100 mb-2">
-                    "{content.amyQuiz.amyIntro}"
+                    &quot;{content.amyQuiz.amyIntro}&quot;
                   </p>
                   <p className="text-sm text-primary-400">— Amy Santiago</p>
                 </div>
@@ -167,7 +167,7 @@ export default function AmySantiagoQuiz() {
                       <span className="font-bold text-arcane-gold">
                         {questions[currentQuestion].characterComment.character}:
                       </span>{' '}
-                      "{questions[currentQuestion].characterComment.text}"
+                      &quot;{questions[currentQuestion].characterComment.text}&quot;
                     </p>
                   </div>
                 )}
@@ -241,7 +241,7 @@ export default function AmySantiagoQuiz() {
                     >
                       <p className="text-sm">
                         <span className="font-bold text-primary-200">{reaction.character}:</span>
-                        <span className="text-primary-300 italic"> "{reaction.text}"</span>
+                        <span className="text-primary-300 italic"> &quot;{reaction.text}&quot;</span>
                       </p>
                     </div>
                   ))}
