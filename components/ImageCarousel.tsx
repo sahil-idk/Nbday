@@ -45,13 +45,13 @@ export default function ImageCarousel() {
   return (
     <section className="section" data-section="playlist">
       <div className="container-custom">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           {/* Title */}
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-heading mb-4">
+          <div className="text-center mb-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading mb-3">
               {content.carousel.title}
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-primary-300">
+            <p className="text-sm sm:text-base md:text-lg text-primary-300">
               {content.carousel.subtitle}
             </p>
           </div>
@@ -63,13 +63,13 @@ export default function ImageCarousel() {
             onMouseLeave={() => setIsHovered(false)}
           >
             {/* Main Carousel */}
-            <div className="relative overflow-hidden rounded-3xl border-2 border-arcane-gold/30 bg-primary-900/30 backdrop-blur-sm">
+            <div className="relative overflow-hidden rounded-2xl border-2 border-arcane-gold/30 bg-primary-900/30 backdrop-blur-sm">
               {/* Birthday Confetti Effect */}
               <div className="absolute inset-0 pointer-events-none z-10">
-                {[...Array(20)].map((_, i) => (
+                {[...Array(15)].map((_, i) => (
                   <div
                     key={i}
-                    className="absolute w-2 h-2 rounded-full opacity-60"
+                    className="absolute w-1.5 h-1.5 rounded-full opacity-50"
                     style={{
                       left: `${Math.random() * 100}%`,
                       top: `${Math.random() * 100}%`,
@@ -82,7 +82,7 @@ export default function ImageCarousel() {
               </div>
 
               {/* Image Display */}
-              <div className="relative aspect-[16/10] md:aspect-[16/9]">
+              <div className="relative aspect-[16/11] md:aspect-[16/10]">
                 {images.map((image, index) => (
                   <div
                     key={index}
@@ -101,16 +101,16 @@ export default function ImageCarousel() {
                     <img
                       src={image.src}
                       alt={image.alt}
-                      className="w-full h-full object-cover rounded-3xl"
+                      className="w-full h-full object-cover rounded-2xl"
                     />
 
                     {/* Image Caption Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary-950/90 via-primary-950/60 to-transparent p-6 md:p-8 rounded-b-3xl">
-                      <p className="text-lg sm:text-xl md:text-2xl font-heading text-white mb-2">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary-950/90 via-primary-950/60 to-transparent p-4 md:p-5 rounded-b-2xl">
+                      <p className="text-base sm:text-lg md:text-xl font-heading text-white mb-1">
                         {image.caption}
                       </p>
                       {image.series && (
-                        <p className="text-sm sm:text-base text-primary-300">
+                        <p className="text-xs sm:text-sm text-primary-300">
                           From: {image.series}
                         </p>
                       )}
@@ -122,27 +122,27 @@ export default function ImageCarousel() {
               {/* Navigation Arrows */}
               <button
                 onClick={handlePrev}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-primary-900/80 backdrop-blur-md border border-primary-600/50 flex items-center justify-center hover:bg-primary-800/90 hover:scale-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-arcane-gold"
+                className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-primary-900/80 backdrop-blur-md border border-primary-600/50 flex items-center justify-center hover:bg-primary-800/90 hover:scale-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-arcane-gold"
                 aria-label="Previous image"
               >
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
 
               <button
                 onClick={handleNext}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-primary-900/80 backdrop-blur-md border border-primary-600/50 flex items-center justify-center hover:bg-primary-800/90 hover:scale-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-arcane-gold"
+                className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-primary-900/80 backdrop-blur-md border border-primary-600/50 flex items-center justify-center hover:bg-primary-800/90 hover:scale-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-arcane-gold"
                 aria-label="Next image"
               >
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>
 
             {/* Dot Indicators */}
-            <div className="flex justify-center gap-3 mt-8">
+            <div className="flex justify-center gap-2 mt-6">
               {images.map((_, index) => (
                 <button
                   key={index}

@@ -28,29 +28,29 @@ export default function BirthdayMessage() {
   return (
     <section className="section" data-section="birthday">
       <div className="container-custom">
-        <div className="max-w-2xl">
+        <div className="max-w-xl">
           {/* Left-aligned content */}
           <div className="text-left">
-            <h2 className="text-3xl w- sm:text-4xl md:text-6xl lg:text-7xl font-heading mb-8 text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading mb-6 text-white">
               {content.birthdayMessage.heading}
             </h2>
 
             {/* Audio Player */}
-            <div className="mb-8">
+            <div className="mb-6">
               <div className="card bg-primary-900/30 backdrop-blur-sm border border-primary-600/30">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3">
                   {/* Play/Pause Button */}
                   <button
                     onClick={handlePlayPause}
-                    className="flex-shrink-0 w-16 h-16 rounded-full bg-primary-600/80 hover:bg-primary-500 flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-400"
+                    className="flex-shrink-0 w-12 h-12 rounded-full bg-primary-600/80 hover:bg-primary-500 flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-400"
                     aria-label={isPlaying ? 'Pause' : 'Play'}
                   >
                     {isPlaying ? (
-                      <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
                       </svg>
                     ) : (
-                      <svg className="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z" />
                       </svg>
                     )}
@@ -58,21 +58,21 @@ export default function BirthdayMessage() {
 
                   {/* Song Info */}
                   <div className="flex-1 min-w-0">
-                    <p className="font-medium text-white text-lg truncate">
+                    <p className="font-medium text-white text-base truncate">
                       {content.birthdayMessage.songTitle}
                     </p>
-                    <p className="text-sm text-primary-300 truncate">
+                    <p className="text-xs text-primary-300 truncate">
                       {content.birthdayMessage.songArtist}
                     </p>
                   </div>
 
                   {/* Visualizer Animation */}
                   {isPlaying && (
-                    <div className="flex gap-1 items-end h-12">
+                    <div className="flex gap-1 items-end h-10">
                       {[...Array(5)].map((_, i) => (
                         <div
                           key={i}
-                          className="w-1.5 bg-primary-400 rounded-full"
+                          className="w-1 bg-primary-400 rounded-full"
                           style={{
                             animation: `wave ${0.5 + i * 0.1}s ease-in-out infinite`,
                             animationDelay: `${i * 0.1}s`,
@@ -95,11 +95,11 @@ export default function BirthdayMessage() {
             </div>
 
             {/* Message Paragraphs */}
-            <div className="space-y-4">
+            <div className="space-y-3">
               {content.birthdayMessage.paragraphs.map((paragraph, index) => (
                 <p
                   key={index}
-                  className="text-base sm:text-lg md:text-xl lg:text-2xl text-primary-100 leading-relaxed"
+                  className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-100 leading-relaxed"
                 >
                   {paragraph}
                 </p>
