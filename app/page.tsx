@@ -2,8 +2,7 @@ import BackgroundTransition from "@/components/BackgroundTransition";
 import Hero from "@/components/Hero";
 import ArcaneSection from "@/components/ArcaneSection";
 import Brooklyn99Card from "@/components/Brooklyn99Card";
-import MemoryGallery from "@/components/MemoryGallery";
-import InteractiveScroll from "@/components/InteractiveScroll";
+import BirthdayMessage from "@/components/BirthdayMessage";
 import ShayariSection from "@/components/ShayariSection";
 import PlaylistSection from "@/components/PlaylistSection";
 import DateCard from "@/components/DateCard";
@@ -16,8 +15,7 @@ export default function Home() {
       <Hero />
       <ArcaneSection />
       <Brooklyn99Card />
-      <MemoryGallery />
-      <InteractiveScroll />
+      <BirthdayMessage />
       <ShayariSection />
       <PlaylistSection />
       <DateCard />

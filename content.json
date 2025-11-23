@@ -31,6 +31,16 @@
     ],
     "funLine": "\"Cool, cool, cool, cool, cool\" - Jake Peralta"
   },
+  "birthdayMessage": {
+    "heading": "Happy birthday bbg ....",
+    "songTitle": "Your Special Song",
+    "songArtist": "Artist Name",
+    "songUrl": "/music/birthday-song.mp3",
+    "paragraphs": [
+      "Here's to another year of late-night drives, endless conversations, and all those little moments that make everything better.",
+      "Thank you for being the calm in every storm, the laugh in every silence, and the blue in every day. Happy birthday, bbg! 💙"
+    ]
+  },
   "memoryGallery": {
     "title": "Our Little Moments",
     "subtitle": "From garba nights to quiet drives",
