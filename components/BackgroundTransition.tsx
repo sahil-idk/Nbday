@@ -30,7 +30,7 @@ const backgrounds: BackgroundConfig[] = [
   },
   {
     id: 'birthday',
-    image: '/backgrounds/gallery.gif',
+    image: '/backgrounds/journey.gif',
     gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.35) 0%, rgba(30, 64, 175, 0.3) 100%)', // Much lighter
     isAnimated: true,
   },
@@ -98,10 +98,12 @@ export default function BackgroundTransition() {
         }
       }
 
-      setActiveIndex(currentSection);
+      // Ensure indices are within bounds
+      const safeIndex = Math.min(Math.max(currentSection, 0), backgrounds.length - 1);
+      setActiveIndex(safeIndex);
 
       // Set next index for smooth transition
-      const next = Math.min(currentSection + 1, backgrounds.length - 1);
+      const next = Math.min(safeIndex + 1, backgrounds.length - 1);
       setNextIndex(next);
 
       // Smooth transition progress
@@ -113,6 +115,10 @@ export default function BackgroundTransition() {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Safety check for indices
+  const safeActiveIndex = Math.min(Math.max(activeIndex, 0), backgrounds.length - 1);
+  const safeNextIndex = Math.min(Math.max(nextIndex, 0), backgrounds.length - 1);
 
   return (
     <div className="fixed inset-0 -z-10">
@@ -127,7 +133,7 @@ export default function BackgroundTransition() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('${backgrounds[activeIndex].image}')`,
+            backgroundImage: `url('${backgrounds[safeActiveIndex]?.image || backgrounds[0].image}')`,
             backgroundColor: '#1e3a8a', // Fallback color if image doesn't load
           }}
         />
@@ -136,7 +142,7 @@ export default function BackgroundTransition() {
         <div
           className="absolute inset-0"
           style={{
-            background: backgrounds[activeIndex].gradient,
+            background: backgrounds[safeActiveIndex]?.gradient || backgrounds[0].gradient,
           }}
         />
       </div>
@@ -152,7 +158,7 @@ export default function BackgroundTransition() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('${backgrounds[nextIndex].image}')`,
+            backgroundImage: `url('${backgrounds[safeNextIndex]?.image || backgrounds[0].image}')`,
             backgroundColor: '#2563eb', // Fallback color if image doesn't load
           }}
         />
@@ -161,7 +167,7 @@ export default function BackgroundTransition() {
         <div
           className="absolute inset-0"
           style={{
-            background: backgrounds[nextIndex].gradient,
+            background: backgrounds[safeNextIndex]?.gradient || backgrounds[0].gradient,
           }}
         />
       </div>
