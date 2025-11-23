@@ -25,16 +25,16 @@ export default function Brooklyn99Card() {
         <div className="max-w-3xl mx-auto">
           <div className="card">
             <div className="text-center mb-8">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading mb-4">
+              {/* <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading mb-4">
                 {content.brooklyn99.title}
               </h2>
               <p className="text-primary-300 text-base sm:text-lg">
                 {content.brooklyn99.question}
-              </p>
+              </p> */}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-              {content.brooklyn99.options.map((option, index) => (
+              {/* {content.brooklyn99.options.map((option, index) => (
                 <button
                   key={index}
                   onClick={() => handleSelect(index)}
@@ -47,11 +47,11 @@ export default function Brooklyn99Card() {
                 >
                   <p className="font-medium text-base sm:text-lg">{option.text}</p>
                 </button>
-              ))}
+              ))} */}
             </div>
 
             {/* Result */}
-            <div
+            {/* <div
               className={`transition-all duration-500 overflow-hidden ${
                 showResult ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
               }`}
@@ -63,12 +63,12 @@ export default function Brooklyn99Card() {
                   </p>
                 </div>
               )}
-            </div>
+            </div> */}
 
             {/* Fun line */}
             <div className="mt-8 text-center">
               <p className="text-primary-400 italic">
-                {content.brooklyn99.funLine}
+                {/* {content.brooklyn99.funLine} */}
               </p>
             </div>
           </div>
