@@ -4,7 +4,7 @@ Add your song files here for the audio players throughout the website.
 
 ## Required Files:
 
-1. **`forever-rain.mp3`** - RM's "forever rain" for the birthday message section
+1. **`come-back-2-me.mp3`** - RM's "Come back 2 me" for the birthday message section (plays from 2:15 to end)
 2. **`ma-meilleure-ennemie.mp3`** - "Ma Meilleure Ennemie" from Arcane for the lyrics section
 
 ## Where to Get the Songs:
@@ -17,7 +17,7 @@ Add your song files here for the audio players throughout the website.
 
 ### Option 2: Convert from YouTube (for personal use)
 - Use tools like [YouTube to MP3 converters](https://ytmp3.cc/)
-- Search for "forever rain RM" and "Ma Meilleure Ennemie Arcane"
+- Search for "Come back 2 me RM" and "Ma Meilleure Ennemie Arcane"
 - Download as MP3
 
 ### Option 3: Use Spotify Web Playback SDK (Advanced)
@@ -36,7 +36,7 @@ If you prefer streaming from Spotify instead of files, you can integrate the Spo
    - Use [CloudConvert](https://cloudconvert.com/mp3-converter)
    - Or [Online Audio Converter](https://online-audio-converter.com/)
 3. **Rename the files**:
-   - `forever-rain.mp3`
+   - `come-back-2-me.mp3`
    - `ma-meilleure-ennemie.mp3`
 4. **Place them here**: `/public/music/`
 
@@ -44,7 +44,7 @@ If you prefer streaming from Spotify instead of files, you can integrate the Spo
 ```
 public/
 └── music/
-    ├── forever-rain.mp3
+    ├── come-back-2-me.mp3
     └── ma-meilleure-ennemie.mp3
 ```
 
@@ -85,7 +85,8 @@ You'll need to add the song lyrics to `content.json`. Open the file and update t
 
 ## Features:
 
-### Birthday Message Section (Forever Rain):
+### Birthday Message Section (Come back 2 me):
+- **Automatically starts at 2:15** (2 minutes 15 seconds) when you press play
 - Play/Pause button
 - Song title and artist display
 - Animated audio visualizer bars

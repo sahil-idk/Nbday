@@ -7,12 +7,18 @@ import ScrollArrow from '@/components/ScrollArrow';
 export default function BirthdayMessage() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const hasStarted = useRef(false);
 
   const handlePlayPause = () => {
     if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
       } else {
+        // Set start time on first play
+        if (!hasStarted.current && content.birthdayMessage.startTime) {
+          audioRef.current.currentTime = content.birthdayMessage.startTime;
+          hasStarted.current = true;
+        }
         audioRef.current.play();
       }
       setIsPlaying(!isPlaying);
