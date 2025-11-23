@@ -35,6 +35,12 @@ const backgrounds: BackgroundConfig[] = [
     isAnimated: true,
   },
   {
+    id: 'shayari',
+    image: '/backgrounds/shayari.gif',
+    gradient: 'linear-gradient(180deg, rgba(23, 37, 84, 0.4) 0%, rgba(30, 58, 138, 0.35) 100%)', // Lighter
+    isAnimated: true,
+  },
+  {
     id: 'playlist',
     image: '/backgrounds/playlist.gif',
     gradient: 'linear-gradient(180deg, rgba(30, 58, 138, 0.4) 0%, rgba(59, 130, 246, 0.35) 100%)', // Lighter

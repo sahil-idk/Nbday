@@ -5,7 +5,7 @@ Add your song files here for the audio players throughout the website.
 ## Required Files:
 
 1. **`come-back-2-me.mp3`** - RM's "Come back 2 me" for the birthday message section (plays from 2:15 to end)
-2. **`ma-meilleure-ennemie.mp3`** - "Ma Meilleure Ennemie" from Arcane for the lyrics section
+2. **`ma-meilleure-ennemie.mp3`** - "Ma Meilleure Ennemie" from Arcane for the music section
 
 ## Where to Get the Songs:
 
@@ -53,35 +53,20 @@ public/
 - 3-5 minute songs typically: 3-7MB in MP3 format
 - Use 192-320 kbps bitrate for good quality
 
-## Adding Lyrics for "Ma Meilleure Ennemie":
+## Song Information in content.json:
 
-You'll need to add the song lyrics to `content.json`. Open the file and update the `lyricsSection`:
+The song information is already configured in `content.json`:
 
 ```json
 "lyricsSection": {
   "title": "How I See You",
   "songTitle": "Ma Meilleure Ennemie",
   "songArtist": "Stromae & Pomme (Arcane)",
-  "songUrl": "/music/ma-meilleure-ennemie.mp3",
-  "lyrics": [
-    { "text": "First line of lyrics", "startTime": 0 },
-    { "text": "Second line of lyrics", "startTime": 3.5 },
-    { "text": "Third line of lyrics", "startTime": 7 },
-    { "text": "Fourth line of lyrics", "startTime": 10.5 }
-  ]
+  "songUrl": "/music/ma-meilleure-ennemie.mp3"
 }
 ```
 
-**How to set timing:**
-1. Play the song and note when each lyric line starts (in seconds)
-2. Update the `startTime` values accordingly
-3. The lyrics will fade in as the song plays!
-
-**Where to find lyrics:**
-- Search "Ma Meilleure Ennemie lyrics" on Google
-- Use [Genius.com](https://genius.com)
-- Use [AZLyrics.com](https://azlyrics.com)
-- Listen to the song and type them yourself
+No lyrics configuration needed - just add the MP3 file!
 
 ## Features:
 
@@ -92,13 +77,13 @@ You'll need to add the song lyrics to `content.json`. Open the file and update t
 - Animated audio visualizer bars
 - Auto-stops at end of song
 
-### Lyrics Section (Ma Meilleure Ennemie):
-- **Autoplay** when scrolling into view
-- Very transparent player design
+### Music Section (Ma Meilleure Ennemie):
+- **Autoplay** when scrolling into view (browser permitting)
+- Very transparent player design - shows the shayari.gif background
 - Animated "How I See You" title
-- Lyrics fade in synchronized with the song
 - Play/Pause controls
 - Audio visualizer
+- Beautiful integration with background GIF
 
 ## Testing:
-After adding both files and updating the lyrics in `content.json`, the website will have two beautiful music experiences!
+After adding both MP3 files, the website will have two beautiful music experiences!
