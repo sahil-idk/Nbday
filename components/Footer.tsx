@@ -8,13 +8,13 @@ export default function Footer() {
       <div className="container-custom py-16">
         {/* Main message */}
         <div className="text-center mb-12">
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-heading text-primary-200 max-w-3xl mx-auto leading-relaxed px-4">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-heading text-white max-w-3xl mx-auto leading-relaxed px-4">
             {content.footer.message}
             {/* Pls go on the easy on the punches this time. */}
           </p>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-heading text-primary-200 max-w-3xl mx-auto mt-10 leading-relaxed px-4">
+          <p className="text-lg sm:text-lg md:text-xl lg:text-2xl font-heading text-primary-200 max-w-3xl mx-auto mt-10 leading-relaxed px-4">
             
-            Pls go on the easy on the punches this time 🤕
+            Pls go easy on the punches this time 🤕
           </p>
         </div>
         
